@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper{
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(155px)  brightness(50%) saturate(250%);
+    padding: 40px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+.game-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    color: rgba(255, 255, 255, 0.792);
+    height: 40px;
+    width: 230px;
+    border-radius: 1rem;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+
+.tic-tac-toe{
+ 
+    width: 100%;
+    max-width: 20rem;
+    display: grid;
+    place-content:center ;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+    background-color:rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+   
+}
+.box{
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1/1;
+    /* height: 80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: aliceblue;
+    /* width: 120px; */
+    /* border: 2px solid rgba(255, 255, 255, 0.8); */
+}
+.box1,.box7,.box4,.box2,.box5,.box8{
+    border-right: 2px solid rgba(255, 255, 255, 0.8) ;
+}
+.box1,.box2,.box3,.box4,.box6,.box5{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8) ;
+}
+
+
+
+.btn{
+    background-color:rgba(255, 255, 255, 0.1) ;
+    color: rgba(255, 255, 255, 0.792);
+    height: 40px;
+    width: 150px;
+    border-radius: 1rem;
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+    visibility: hidden;
+    font-size: 15px;
+}
+
+.btn.active{
+    visibility: visible;
+}
+
+.win{
+    background-color: rgba(0, 128, 0, 0.493);
+    transition: .3s;
+}
