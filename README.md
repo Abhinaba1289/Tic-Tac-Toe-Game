@@ -2,8 +2,9 @@
 
 Welcome to the **Tic Tac Toe** game! This project is a web-based version of the classic game, where two players take turns marking Xs and Os on a 3x3 grid, aiming to be the first to align three in a row. Enjoy a nostalgic game experience with a modern, interactive interface!
 
-## 📸 Screenshots
-![Tic Tac Toe Game](https://your-image-url-here.com/screenshot.png)
+## 💻 Live Demo
+
+Check out the live version of the game [Click Here 🚀](https://your-live-demo-url-here.com)
 
 ## 🚀 Features
 
